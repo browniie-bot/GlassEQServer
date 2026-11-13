@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/stripe/stripe-go/v86"
+	"github.com/stripe/stripe-go/v87"
 )
 
 const (

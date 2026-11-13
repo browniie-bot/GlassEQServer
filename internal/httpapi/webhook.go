@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/juhokoskela/GlassEQServer/internal/billing"
-	"github.com/stripe/stripe-go/v86/webhook"
+	"github.com/stripe/stripe-go/v87/webhook"
 )
 
 const (

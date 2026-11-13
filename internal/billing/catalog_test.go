@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/stripe/stripe-go/v86"
+	"github.com/stripe/stripe-go/v87"
 )
 
 func TestCheckoutClientChecksCatalog(t *testing.T) {

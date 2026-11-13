@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/juhokoskela/GlassEQServer/internal/activation"
-	"github.com/stripe/stripe-go/v86"
+	"github.com/stripe/stripe-go/v87"
 )
 
 var errBillingSnapshotChanged = errors.New("billing order changed during Stripe hydration")

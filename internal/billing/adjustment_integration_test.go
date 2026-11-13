@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stripe/stripe-go/v86"
+	"github.com/stripe/stripe-go/v87"
 )
 
 type fakeAdjustments struct {
