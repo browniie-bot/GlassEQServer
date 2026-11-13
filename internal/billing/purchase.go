@@ -4,7 +4,7 @@ import (
 	"context"
 	"errors"
 
-	"github.com/stripe/stripe-go/v86"
+	"github.com/stripe/stripe-go/v87"
 )
 
 var ErrUnsupportedPurchase = errors.New("billing event requires an unsupported purchase lifecycle")

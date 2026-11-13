@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/juhokoskela/GlassEQServer/internal/activation"
-	"github.com/stripe/stripe-go/v86"
+	"github.com/stripe/stripe-go/v87"
 )
 
 const maximumBillingEventBytes = 256 * 1024

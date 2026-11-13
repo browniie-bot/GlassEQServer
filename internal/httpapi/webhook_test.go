@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stripe/stripe-go/v86/webhook"
+	"github.com/stripe/stripe-go/v87/webhook"
 )
 
 type recordingBillingProcessor struct {

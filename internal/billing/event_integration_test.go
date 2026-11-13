@@ -20,7 +20,7 @@ import (
 
 	"github.com/juhokoskela/GlassEQServer/internal/activation"
 	"github.com/juhokoskela/GlassEQServer/internal/entitlement"
-	"github.com/stripe/stripe-go/v86"
+	"github.com/stripe/stripe-go/v87"
 )
 
 func TestPurchaseFulfillmentWithPostgreSQL(t *testing.T) {

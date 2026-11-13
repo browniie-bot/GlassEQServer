@@ -4,7 +4,7 @@ import (
 	"context"
 	"errors"
 
-	"github.com/stripe/stripe-go/v86"
+	"github.com/stripe/stripe-go/v87"
 )
 
 var ErrInvalidAdjustment = errors.New("Stripe returned an invalid billing adjustment")
@@ -101,6 +101,7 @@ func (c *CheckoutClient) FindInvoicePayment(ctx context.Context, paymentID strin
 	defer cancel()
 	params := &stripe.InvoicePaymentListParams{Payment: &stripe.InvoicePaymentListPaymentParams{Type: stripe.String("payment_intent"), PaymentIntent: stripe.String(paymentID)}}
 	params.Limit = stripe.Int64(2)
+	params.Single = true
 	list := c.invoicePayments.List(ctx, params)
 	if list == nil {
 		return nil, ErrInvalidAdjustment
@@ -141,6 +142,7 @@ func (c *CheckoutClient) FindPurchase(ctx context.Context, paymentID, subscripti
 		params.Subscription = stripe.String(subscriptionID)
 	}
 	params.Limit = stripe.Int64(2)
+	params.Single = true
 	list := c.sessionList.List(ctx, params)
 	if list == nil {
 		return nil, ErrInvalidAdjustment

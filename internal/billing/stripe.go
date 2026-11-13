@@ -7,11 +7,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/stripe/stripe-go/v86"
+	"github.com/stripe/stripe-go/v87"
 )
 
 const (
-	StripeAPIVersion     = "2026-07-29.preview"
+	StripeAPIVersion     = "2026-10-28.endive"
 	PolicyVersion        = "v1"
 	stripeRequestTimeout = 15 * time.Second
 	stripeResponseLimit  = 1 << 20
